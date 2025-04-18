@@ -1,5 +1,5 @@
 import express from "express"
-import { newController } from "../controllers/new.controllers"
+import { newController } from "../controllers/newController"
 
 export const newRouter = express.Router()
 

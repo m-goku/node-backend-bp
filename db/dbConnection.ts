@@ -6,5 +6,7 @@ export const dbConnect = () => {
         mongoose.connect(process?.env?.DB_URI)
         .then(() => console.log("db connected"))
         .catch((e) => console.log(e))
+    }else{
+        console.log("no db connection string provided")
     }
 }
